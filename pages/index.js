@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Typed from "react-typed";
 import styles from "../styles/Home.module.scss";
+import 'react-typed/dist/animatedCursor.css';
 
 export default function Home() {
   return (
@@ -13,9 +14,22 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <div className={styles.name}>
-          <Typed strings={["US Army Veteran", "Software Engineer", "Gary Duncan"]} typeSpeed={40} backSpeed={50} />
-        </div>
+
+          <div className={styles.name}>
+            <Typed
+              strings={["US Army Veteran", "Software Engineer", "Gary Duncan"]}
+              typeSpeed={40}
+              backSpeed={50}
+            />
+          </div>
+          <div className={styles.subName}>
+            <Typed strings={["Full Stack Python/JS Developer"]} 
+              startDelay={7700}
+              typeSpeed={10}
+              showCursor={(false)}
+            />
+          </div>
+        
       </main>
     </div>
   );

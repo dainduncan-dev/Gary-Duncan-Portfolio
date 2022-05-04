@@ -1,8 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import Typed from "react-typed";
+import SideBar from '../components/sidebar';
 import styles from "../styles/Home.module.scss";
-import 'react-typed/dist/animatedCursor.css';
+import "react-typed/dist/animatedCursor.css";
 
 export default function Home() {
   return (
@@ -14,25 +16,26 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-
         <div className={styles.nameWrapper}>
           <div className={styles.name}>
             <Typed
               strings={["US Army Veteran", "Software Engineer", "Gary Duncan"]}
               typeSpeed={40}
               backSpeed={50}
-              showCursor={(false)}
+              showCursor={false}
             />
           </div>
           <div className={styles.subName}>
-            <Typed strings={["Full Stack Python/JS Developer"]} 
+            <Typed
+              strings={["Full Stack Python/JS Developer"]}
               startDelay={7700}
               typeSpeed={10}
-              showCursor={(false)}
+              showCursor={false}
             />
           </div>
         </div>
-        
+
+        <SideBar />
       </main>
     </div>
   );

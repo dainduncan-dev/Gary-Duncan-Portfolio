@@ -16,8 +16,8 @@ body {
   font-family: Inconsolata, monospace;
   text-shadow: 0 0 5px #C8C8C8;
 
-  &::after {
-    content: "";
+  ::after {
+    
     position: absolute;
     top: 0;
     left: 0;

@@ -15,11 +15,13 @@ export default function Home() {
 
       <main className={styles.main}>
 
+        <div className={styles.nameWrapper}>
           <div className={styles.name}>
             <Typed
               strings={["US Army Veteran", "Software Engineer", "Gary Duncan"]}
               typeSpeed={40}
               backSpeed={50}
+              showCursor={(false)}
             />
           </div>
           <div className={styles.subName}>
@@ -29,6 +31,7 @@ export default function Home() {
               showCursor={(false)}
             />
           </div>
+        </div>
         
       </main>
     </div>
